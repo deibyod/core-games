@@ -1,0 +1,12 @@
+<mat-card>
+  <img src="{{ feature.image }}" mat-card-image />
+  <mat-card-header>
+    <mat-card-title>{{ feature.title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>{{ feature.description }}</mat-card-content>
+  <mat-card-actions>
+    <button (click)="indicateInterest(feature.id)" mat-raised-button matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+      ¡Me interesa esto!
+    </button>
+  </mat-card-actions>
+</mat-card>
